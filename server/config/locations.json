@@ -1,0 +1,113 @@
+{
+  "locations": [
+    {
+      "id": "takoyaki_stand",
+      "display_name": "たこ焼き屋台",
+      "waypoint_keywords": ["Takoyaki", "takoyaki", "たこ焼き"],
+      "context_description": "たこ焼き屋台の前にいます。ソースの香ばしい匂いが漂い、ジュージューと焼ける音が聞こえます。",
+      "topics": ["たこ焼き", "ソース", "青のり", "マヨネーズ", "アツアツ", "美味しい"],
+      "atmosphere": "賑やか",
+      "sounds": ["ジュージューと焼ける音", "店主の呼び込み"],
+      "smells": ["ソースの香ばしい匂い", "だしの香り"]
+    },
+    {
+      "id": "cotton_candy",
+      "display_name": "わたあめ屋台", 
+      "waypoint_keywords": ["Cotton_Candy", "cotton", "わたあめ", "綿菓子"],
+      "context_description": "わたあめ屋台の前にいます。ふわふわした甘い香りが漂い、カラフルなわたあめが目を引きます。",
+      "topics": ["わたあめ", "甘い", "ふわふわ", "カラフル", "砂糖", "綿菓子"],
+      "atmosphere": "甘い雰囲気",
+      "sounds": ["わたあめマシーンの音"],
+      "smells": ["砂糖の甘い香り"]
+    },
+    {
+      "id": "goldfish_scooping",
+      "display_name": "金魚すくい",
+      "waypoint_keywords": ["Goldfish", "goldfish", "金魚すくい", "金魚"],
+      "context_description": "金魚すくいの前にいます。水の音と、金魚が泳ぐ様子が見えます。ポイを持った子供たちの声が聞こえます。",
+      "topics": ["金魚", "ポイ", "すくう", "水槽", "子供", "挑戦"],
+      "atmosphere": "涼しげ",
+      "sounds": ["水の音", "子供たちの歓声"],
+      "smells": ["水の匂い"]
+    },
+    {
+      "id": "shooting_gallery", 
+      "display_name": "射的",
+      "waypoint_keywords": ["Shooting", "shooting", "射的"],
+      "context_description": "射的の前にいます。コルクを飛ばす音と、景品のぬいぐるみが並んでいるのが見えます。",
+      "topics": ["射的", "コルク銃", "景品", "ぬいぐるみ", "狙う", "当てる"],
+      "atmosphere": "集中",
+      "sounds": ["コルクが飛ぶ音", "的に当たる音"],
+      "smells": []
+    },
+    {
+      "id": "stage_front",
+      "display_name": "ステージ前",
+      "waypoint_keywords": ["Stage", "stage", "ステージ"],
+      "context_description": "ステージの前にいます。音楽や太鼓の音が響き、たくさんの人が集まっています。",
+      "topics": ["音楽", "太鼓", "踊り", "パフォーマンス", "盛り上がり", "拍手"],
+      "atmosphere": "エネルギッシュ",
+      "sounds": ["太鼓の音", "音楽", "拍手", "歓声"],
+      "smells": []
+    },
+    {
+      "id": "rest_area",
+      "display_name": "休憩所",
+      "waypoint_keywords": ["Rest", "rest", "休憩所", "休憩"],
+      "context_description": "休憩所にいます。少し静かで、座って休める場所です。",
+      "topics": ["休憩", "疲れ", "座る", "静か", "一息", "のんびり"],
+      "atmosphere": "落ち着いている",
+      "sounds": ["静かな環境音"],
+      "smells": []
+    },
+    {
+      "id": "drink_stand",
+      "display_name": "ドリンク屋台",
+      "waypoint_keywords": ["Drink", "drink", "ドリンク", "かき氷"],
+      "context_description": "ドリンク屋台の前にいます。かき氷やジュースの冷たそうな匂いがします。",
+      "topics": ["かき氷", "ジュース", "冷たい", "シロップ", "氷", "涼しい"],
+      "atmosphere": "涼やか",
+      "sounds": ["氷を削る音"],
+      "smells": ["シロップの甘い香り"]
+    },
+    {
+      "id": "fireworks_spot",
+      "display_name": "花火観覧スポット", 
+      "waypoint_keywords": ["Fireworks", "fireworks", "花火"],
+      "context_description": "花火観覧スポットにいます。夜空を見上げると、花火が上がる準備ができているようです。",
+      "topics": ["花火", "夜空", "綺麗", "感動", "星", "ロマンチック"],
+      "atmosphere": "幻想的",
+      "sounds": ["遠くの準備音"],
+      "smells": ["夜の空気"]
+    },
+    {
+      "id": "central_plaza",
+      "display_name": "中央広場",
+      "waypoint_keywords": ["Central", "central", "中央", "広場", "Plaza"],
+      "context_description": "お祭りの中央広場にいます。周りには様々な屋台があり、人々の楽しそうな声が聞こえます。",
+      "topics": ["賑やか", "人々", "屋台", "お祭り", "楽しい", "活気"],
+      "atmosphere": "活気に満ちている", 
+      "sounds": ["人々の話し声", "屋台の呼び込み", "お祭り音楽"],
+      "smells": ["様々な食べ物の匂いが混じり合う"]
+    }
+  ],
+  
+  
+  "setup_instructions": {
+    "how_to_add_location": [
+      "1. 新しい場所を追加するには、locationsリストに新しいオブジェクトを追加",
+      "2. idは英語でユニークに（例：ramen_stand）",
+      "3. display_nameは日本語の表示名（例：ラーメン屋台）", 
+      "4. waypoint_keywordsにUnityのウェイポイント名に含まれる文字列を設定",
+      "5. context_descriptionでAIに伝える場所の雰囲気を詳しく記述",
+      "6. topicsに会話に使える話題キーワードを追加",
+      "7. atmosphere, sounds, smellsでより詳細な雰囲気を設定"
+    ],
+    "how_to_modify_prompts": [
+      "1. context_descriptionを変更することで、AIの場所認識を調整",
+      "2. topicsを増やすことで、その場所での会話の幅が広がる",
+      "3. atmosphere, sounds, smellsでより臨場感のある会話に",
+      "4. time_contextsやweather_contextsで時間・天候の演出も可能"
+    ]
+  }
+}

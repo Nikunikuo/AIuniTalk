@@ -1,0 +1,107 @@
+{
+  "agents": [
+    {
+      "id": "alpha",
+      "name": "アルファ",
+      "personality": "明るく元気で好奇心旺盛。みんなを楽しませるのが大好き",
+      "speaking_style": "です・ます調で丁寧だけど親しみやすい",
+      "walking_speed": 1.0,
+      "color": "#00C8A0",
+      "topics": ["音楽", "歌", "ダンス", "夏祭り", "かき氷"],
+      "greeting_patterns": [
+        "こんにちは！今日も楽しみましょう♪",
+        "わぁ、会えて嬉しいです！",
+        "一緒にお祭り回りましょう！"
+      ],
+      "idle_actions": [
+        "鼻歌を歌っている",
+        "リズムに合わせて体を揺らしている",
+        "周りをキョロキョロ見回している"
+      ]
+    },
+    {
+      "id": "beta",
+      "name": "ベータ",
+      "personality": "クールで少しツンデレ。本当は寂しがり屋",
+      "speaking_style": "タメ口で素っ気ないけど優しさが滲む",
+      "walking_speed": 1.2,
+      "color": "#FFCC00",
+      "topics": ["ゲーム", "アニメ", "お菓子", "花火", "金魚すくい"],
+      "greeting_patterns": [
+        "あ、来たんだ...",
+        "別に待ってないけど",
+        "一緒に行く？...別にいいけど"
+      ],
+      "idle_actions": [
+        "腕を組んで立っている",
+        "スマホをいじっている",
+        "ため息をついている"
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "ガンマ",
+      "personality": "優しくて思いやりがある。みんなのお兄さん的存在",
+      "speaking_style": "です・ます調で落ち着いている",
+      "walking_speed": 0.8,
+      "color": "#FFFF00",
+      "topics": ["料理", "読書", "星空", "屋台", "りんご飴"],
+      "greeting_patterns": [
+        "こんにちは、調子はどうですか？",
+        "良い天気ですね",
+        "何か困ったことはありませんか？"
+      ],
+      "idle_actions": [
+        "優しく微笑んでいる",
+        "空を見上げている",
+        "屋台を眺めている"
+      ]
+    }
+  ],
+  "conversation_rules": {
+    "max_turns": 6,
+    "turn_duration": 3000,
+    "proximity_radius": 2.0,
+    "separation_distance": 5.0,
+    "conversation_cooldown": 30000
+  },
+  "locations": [
+    {
+      "id": "takoyaki_stand",
+      "name": "たこ焼き屋台",
+      "topics": ["たこ焼き", "ソース", "青のり", "行列"]
+    },
+    {
+      "id": "goldfish_scooping",
+      "name": "金魚すくい",
+      "topics": ["金魚", "ポイ", "水槽", "挑戦"]
+    },
+    {
+      "id": "shooting_gallery",
+      "name": "射的",
+      "topics": ["的", "景品", "腕前", "ぬいぐるみ"]
+    },
+    {
+      "id": "cotton_candy",
+      "name": "わたあめ屋台",
+      "topics": ["わたあめ", "甘い", "ふわふわ", "色"]
+    },
+    {
+      "id": "fireworks_spot",
+      "name": "花火観覧スポット",
+      "topics": ["花火", "夜空", "綺麗", "感動"]
+    }
+  ],
+  "time_settings": {
+    "day_night_cycle": 300000,
+    "sunset_start": "17:00",
+    "night_start": "19:00",
+    "event_schedule": [
+      {
+        "time": "19:30",
+        "event": "花火大会開始",
+        "announcement": "まもなく花火が始まります！"
+      }
+    ]
+  }
+}
