@@ -36,6 +36,7 @@ server/data/session_state.json
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 [Rr]ecordings/
 
@@ -44,7 +45,23 @@ server/data/session_state.json
 *.pdb.meta
 *.mdb.meta
 
-# Unity generated
+# Unity Blender files
+*.blend1
+*.blend1.meta
+
+# Unity Jetbrains Rider plugin
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.DotSettings.user
+
+# Visual Studio cache directory
+.vs/
+
+# Gradle cache directory
+.gradle/
+
+# Unity generated files
+ExportedObj/
+.consulo/
 *.csproj
 *.unityproj
 *.sln
@@ -66,13 +83,37 @@ server/data/session_state.json
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Mono auto generated files
+mono_crash.*
+
 # Builds
 *.apk
+*.aab
 *.unitypackage
+*.unitypackage.meta
 *.app
 
-# Crashlytics
+# Crashlytics generated file
 crashlytics-build.properties
+
+# TestRunner generated files
+InitTestScene*.unity*
+
+# Addressables default ignores
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Visual Scripting auto-generated files
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Auto-generated scenes by play mode tests
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
 # OS
 .DS_Store
@@ -93,7 +134,6 @@ coverage/
 .pytest_cache/
 
 # Temporary files
-*.tmp
 *.bak
 *.backup
 ~$*
